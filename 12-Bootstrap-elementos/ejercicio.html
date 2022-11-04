@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elementos de Interés en Bootstrap</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+
+        <section class="seccion-1">
+            <div class="bg-light p-5 rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                    <p class="col-md-8 fs-4 ">
+                        Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.
+                    </p>
+
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#botonModal">
+                        Example button
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="botonModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="botonModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="botonModalLabel">HTML y CSS  OpeN-Bootcamp</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Poniendo en práctica la variedad de características de Bootstrap</p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Entendido</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="seccion-2 bg-light mt-5 p-5 rounded-3">
+            <form>
+                <h2 class="display-6 pb-3">Formulario</h2>
+                <div class="mb-3">
+                    <label for="entradaNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="entradaNombre" aria-describedby="ayudaNombre">
+                    <div id="ayudaNombre" class="form-text fst-italic px-2">En mayúsculas</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="entradaTelefono" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" id="entradaTelefono" aria-describedby="ayudaTelefono">
+                    <div id="ayudaTelefono" class="form-text fst-italic px-2">8 dígitos</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="entradaMensaje" class="form-label">Mensaje</label>
+                    <textarea type="text" class="form-control" id="entradaMensaje" aria-describedby="ayudaMensaje"></textarea>
+                    <div id="ayudaMensaje" class="form-text fst-italic px-2">Describe detalladamente</div>
+                </div>
+            </form>
+        </section>
+
+
+        <section class="seccion-3 bg-light mt-5 p-5 rounded-3" style="width: 20rem;">
+            <div class="card" style="width: 15rem;">
+                <div class="card-header text-center">Perfil de desarrolador</div>
+
+                <div class="card-body">
+                    <h5 class="card-title display-6 fs-2">Freddy Carlos Coaricona Ari</h5>
+                    <p class="card-text">Tengo 22 años, estudiante de Ingeniería Electrónica, con dominio de:</p>
+                    <ul class="list-group list-group-flush fw-bolder">
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">C</li>
+                        <li class="list-group-item">C++</li>
+                    </ul>
+                </div>
+
+                <div class="card-footer text-center">
+                    <button class="btn btn-primary btn-sm">
+                        <a href="#" target="_blank" style="text-decoration: none; color: white;">Contacto</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
